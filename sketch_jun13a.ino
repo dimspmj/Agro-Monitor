@@ -9,10 +9,10 @@
 #include <time.h> // Library bawaan buat narik jam dari internet
 
 // --- KREDENSIAL WIFI & BOT ---
-#define WIFI_SSID     "SNH01.Kasida"
-#define WIFI_PASSWORD "12345678"
-#define BOT_TOKEN     "8765836248:AAFEfDQ311MhgXenAjCsBfm1l7iwFXf55tY"
-#define CHAT_ID       "8765836248"
+#define WIFI_SSID     "WIFI_SSID"
+#define WIFI_PASSWORD "WIFI_PASS"
+#define BOT_TOKEN     "BOT_TOKEN"
+#define CHAT_ID       "BOT_ID"
 
 // --- PIN HARDWARE ---
 #define TFT_CS     5
