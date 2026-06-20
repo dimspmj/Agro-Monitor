@@ -83,4 +83,4 @@ Pastikan Anda telah menginstal library berikut melalui **Library Manager** di Ar
    #define WIFI_SSID     "Nama_WiFi_Anda"
    #define WIFI_PASSWORD "Password_WiFi"
    #define BOT_TOKEN     "TOKEN_DARI_BOTFATHER"
-   #define CHAT_ID       "CHAT_ID_ANDA"![Uploading dashboard-ui.png…]()
+   #define CHAT_ID       "CHAT_ID_ANDA"
