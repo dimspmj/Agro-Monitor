@@ -14,7 +14,7 @@
 Berikut adalah tampilan antarmuka (UI) pada layar TFT saat sistem beroperasi secara real-time:
 
 <p align="center">
-  <img src="<img width="287" height="396" alt="dashboard-ui" src="https://github.com/user-attachments/assets/c0b05fc6-d62d-492a-b7e5-2b549f0937a2" />
+  <img src="<img width="287" height="396" alt="dashboard-ui" src="https://github.com/user-attachments/assets/c0b05fc6-d62d-492a-b7e5-2b549f0937a2.png" />
 " width="400" alt="Preview Dashboard Agro Monitor TFT 1.8">
 </p>
 
