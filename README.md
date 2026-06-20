@@ -14,7 +14,7 @@
 Berikut adalah tampilan antarmuka (UI) pada layar TFT saat sistem beroperasi secara real-time:
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/c0b05fc6-d62d-492a-b7e5-2b549f0937a2.png" width="400" alt="Preview Dashboard Agro Monitor TFT 1.8">
+  <img src="https://github.com/user-attachments/assets/1a0d59bd-4b7d-44e1-9e41-5cf69e868c26.png" width="287" height="396" alt="dashboard-ui" />
 </p>
 
 * **Mode Normal:** Menampilkan indikator angka secara langsung dengan status "SYS:OK".
