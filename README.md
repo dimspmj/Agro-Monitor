@@ -14,7 +14,8 @@
 Berikut adalah tampilan antarmuka (UI) pada layar TFT saat sistem beroperasi secara real-time:
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/1a0d59bd-4b7d-44e1-9e41-5cf69e868c26.png" width="287" height="396" alt="dashboard-ui" />
+  <img src="<img width="287" height="396" alt="dashboard-ui" src="https://github.com/user-attachments/assets/eff7509a-7d00-4083-8709-98a1f758f2bc" />
+" />
 </p>
 
 * **Mode Normal:** Menampilkan indikator angka secara langsung dengan status "SYS:OK".
