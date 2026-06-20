@@ -1,4 +1,4 @@
-# Agro Monitor ESP32 (Smart Garden System)
+# Agro Monitor ESP32 (Smart Garden System) (ID)
 
 ![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)
 ![Platform](https://img.shields.io/badge/platform-ESP32-lightgrey.svg)
@@ -84,3 +84,70 @@ Pastikan Anda telah menginstal library berikut melalui **Library Manager** di Ar
    #define WIFI_PASSWORD "Password_WiFi"
    #define BOT_TOKEN     "TOKEN_DARI_BOTFATHER"
    #define CHAT_ID       "CHAT_ID_ANDA"
+
+# Agro Monitor ESP32 (Smart Garden System) (EN)
+
+[English](#english) | [Bahasa Indonesia](#bahasa-indonesia)
+
+---
+
+## English
+
+![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)
+![Platform](https://img.shields.io/badge/platform-ESP32-lightgrey.svg)
+![Framework](https://img.shields.io/badge/framework-Arduino-00979C.svg)
+![License](https://img.shields.io/badge/license-MIT-green.svg)
+
+**Agro Monitor** is a smart agriculture monitoring system based on the ESP32 microcontroller. This project is designed to monitor vital plant environmental parameters in real-time with a professional TFT 1.8" (ST7735) dashboard user interface.
+
+### Dashboard Interface
+
+Below is the real-time user interface (UI) displayed on the TFT screen:
+
+![Dashboard Agro Monitor](https://github.com/user-attachments/assets/1a0d59bd-4b7d-44e1-9e41-5cf69e868c26.png)
+
+* **Normal Mode:** Displays live numerical indicators with a "SYS:OK" status.
+* **Warning Mode (Pop-up):** The system triggers a full-screen warning animation if the soil moisture drops below 40% or light intensity falls below 200 lux.
+
+### Key Features
+
+* **Real-Time Dashboard UI:** Data visualization for Temperature, Air Humidity, Soil Moisture, and Light Intensity packed in a 128x160 pixel density.
+* **Automated Warning System:** Low water/light graphical animation that appears for 4 seconds, equipped with a 5-minute anti-spam interval limit.
+* **Physical LED Indicators:** * **Blue:** Ideal environmental conditions / system running normally.
+  * **Red:** Critical condition (action required) or sensor hardware malfunction.
+* **Hardware Fail-Safe:** Capable of detecting disconnected or damaged sensor cables, holding error values on the dashboard to prevent false data readings.
+* **Telegram Notification (Online Mode Only):** Integrated with a Telegram bot for scheduled reports (NTP Sync) every 07:00 and 17:00, alongside emergency alerts sent directly to the user's smartphone.
+
+### Hardware Components
+
+* ESP32 Development Board
+* TFT 1.8" SPI Display (ST7735 Driver, 7-Pin)
+* DHT22 Sensor (Temperature & Humidity)
+* Capacitive Soil Moisture Sensor v1.2
+* LDR Photoresistor Module
+* 2x 5mm LEDs (Red & Blue)
+* 2x 220 Ohm Resistors
+* LM2596 Step-Down Module & 12V PSU (For external power supply)
+
+### Pin Configuration (TFT 1.8" SPI)
+
+| TFT 1.8" Pin | ESP32 Pin | Function / Description |
+| :--- | :--- | :--- |
+| **VCC** | 3.3V / VIN | Module Power Supply |
+| **GND** | GND | Common Ground |
+| **CS** | GPIO 5 (D5) | SPI Chip Select |
+| **RESET / RST** | GPIO 4 (D4) | Display Reset |
+| **A0 / DC** | GPIO 2 (D2) | Data / Command Selection |
+| **SDA / MOSI** | GPIO 23 (D23) | SPI Master Output Slave Input |
+| **SCK / SCLK** | GPIO 18 (D18) | SPI Serial Clock |
+
+### Installation & Setup
+
+1. Install the required libraries via the Arduino IDE Library Manager: `Adafruit GFX`, `Adafruit ST7735 and ST7789`, `DHT sensor library`, `UniversalTelegramBot`, and `ArduinoJson`.
+2. Open the source code (`Agro_Monitor_Online.ino` or `Agro_Monitor_Offline.ino`).
+3. If using the Online version, configure your WiFi and Telegram Bot credentials:
+   ```cpp
+   #define WIFI_SSID     "Your_WiFi_Name"
+   #define WIFI_PASSWORD "Your_WiFi_Password"
+   #define BOT_TOKEN     "YOUR_BOTFATHER_TOKEN"
+   #define CHAT_ID       "YOUR_CHAT_ID"
