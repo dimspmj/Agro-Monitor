@@ -104,7 +104,9 @@ Pastikan Anda telah menginstal library berikut melalui **Library Manager** di Ar
 
 Below is the real-time user interface (UI) displayed on the TFT screen:
 
-![Dashboard Agro Monitor](https://github.com/user-attachments/assets/1a0d59bd-4b7d-44e1-9e41-5cf69e868c26.png)
+<p align="center">
+  <img width="287" height="396" alt="dashboard-ui" src="https://github.com/user-attachments/assets/962e20b8-a32c-47a2-b873-24a212fa1cd6" />
+</p>
 
 * **Normal Mode:** Displays live numerical indicators with a "SYS:OK" status.
 * **Warning Mode (Pop-up):** The system triggers a full-screen warning animation if the soil moisture drops below 40% or light intensity falls below 200 lux.
